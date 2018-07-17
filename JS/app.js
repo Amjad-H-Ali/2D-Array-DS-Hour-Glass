@@ -14,9 +14,13 @@ const hourGlassSum = (array) => {
 		middle = 0,
 		bottom = 0;
 	for (let i = 0, len = array.length; i < len; i ++) {
+
 		const addTop = () => {
 			if (i <= 3) {
-				console.log(array[i]);
+				for (let j = 0; j <= 3; j ++) {
+					let total = array[i][j] + array[i][j+1] + array[i][j+2];
+					console.log(total); 
+				};
 			};
 		};
 		addTop();
