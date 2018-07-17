@@ -17,10 +17,13 @@ const hourGlassSum = (array) => {
 				middle = array[i+1][j+1],
 				bottom = array[i+2][j] + array[i+2][j+1] + array[i+2][j+2],
 				total  = top + middle + bottom;
-				console.log(total);
+			if (total > sum) {
+				sum = total;
+			}	
 		};
 		
 	};	
+	return sum;
 };
 
-hourGlassSum(arr);
+console.log(hourGlassSum(arr));
