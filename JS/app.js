@@ -10,10 +10,12 @@ const arr = [
 ];
 
 const hourGlassSum = (array) => {
-	let top = 0,
+	let top    = 0,
 		middle = 0,
 		bottom = 0;
-	console.log(top, middle, bottom);
+	for (let i = 0, len = array.length; i < len; i ++) {
+		console.log(array[i]);
+	};	
 };
 
 hourGlassSum(arr);
