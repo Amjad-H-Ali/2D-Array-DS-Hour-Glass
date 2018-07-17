@@ -11,14 +11,13 @@ const arr = [
 
 const hourGlassSum = (array) => {
 	let sum = 0;
-		
 	for (let i = 0; i <= 3; i ++) {
 		for (let j = 0; j <= 3; j ++) {
-			let top = array[i][j] + array[i][j+1] + array[i][j+2],
+			let top    = array[i][j] + array[i][j+1] + array[i][j+2],
 				middle = array[i+1][j+1],
-				bottom =array[i+2][j] + array[i+2][j+1] + array[i+2][j+2];
-				console.log(top, middle, bottom); 
-				 
+				bottom = array[i+2][j] + array[i+2][j+1] + array[i+2][j+2],
+				total  = top + middle + bottom;
+				console.log(total);
 		};
 		
 	};	
